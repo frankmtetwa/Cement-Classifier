@@ -39,8 +39,8 @@ def show_predict_page():
         y_pred = km.predict(X_df)
         #st.subheader(f"The estimated quality is {y_pred}")
         if y_pred == 0:
-            st.subheader("Good")
+            st.subheader("Okay")
         elif y_pred ==1:
-            st.subheader("Ok")
-        else:
             st.subheader("Bad")
+        else:
+            st.subheader("Good")
